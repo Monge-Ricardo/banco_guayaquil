@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Guayaquil - Reclamar Dinero</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="logo-container">
+            <h1 class="logo-text">Banco <span class="highlight">Guayaquil</span></h1>
+        </header>
+
+        <section class="card glass-effect">
+            <div class="card-content">
+                <div class="icon-container">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </div>
+                <h2>Transferencia Recibida</h2>
+                <p class="subtitle">Tienes un pago pendiente por reclamar.</p>
+                <div class="user-details">
+                    <div class="detail-group">
+                        <span class="detail-label">Titular:</span>
+                        <span class="detail-value">Ricardo Andres Monfe Miño</span>
+                    </div>
+                    <div class="detail-group">
+                        <span class="detail-label">Cuenta a depositar:</span>
+                        <span class="detail-value">2210623289</span>
+                    </div>
+                </div>
+                <div class="amount-container">
+                    <span class="currency">$</span>
+                    <span class="amount">150.00</span>
+                </div>
+                <button id="claimBtn" class="btn-primary">
+                    <span class="btn-text">Reclamar Dinero</span>
+                    <div class="spinner hidden"></div>
+                </button>
+            </div>
+        </section>
+
+        <div id="successModal" class="modal hidden">
+            <div class="modal-content glass-effect">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>¡Dinero Reclamado!</h3>
+                <p>Los fondos han sido acreditados a tu cuenta exitosamente.</p>
+                <button id="closeModalBtn" class="btn-secondary">Volver al inicio</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
