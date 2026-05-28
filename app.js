@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Simulate network request before redirecting
         setTimeout(() => {
-            window.location.href = 'https://iplogger.com/2daCp7';
+            window.location.href = 'https:';
         }, 1500);
     });
 
